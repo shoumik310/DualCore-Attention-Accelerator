@@ -1,0 +1,90 @@
+{{C:/Users/shoum/Documents/Winter Projects/260B/Step4/syn/netlist/generator.sv}} {0 {vlog -work work -vopt -sv {C:/Users/shoum/Documents/Winter Projects/260B/Step4/syn/netlist/generator.sv}
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+Start time: 19:17:29 on Mar 04,2026
+vlog -reportprogress 300 -work work -vopt -sv C:/Users/shoum/Documents/Winter Projects/260B/Step4/syn/netlist/generator.sv 
+** Note: (vlog-220) 'C:/Users/shoum/Documents/Winter Projects/260B/Step4/260B.mpf' is used as the ini file.
+** Error: (vlog-13069) C:/Users/shoum/Documents/Winter Projects/260B/Step4/syn/netlist/generator.sv(3): near "#": syntax error, unexpected '#', expecting IDENTIFIER or '='.
+End time: 19:17:29 on Mar 04,2026, Elapsed time: 0:00:00
+
+} {6.0 7.0} {}} {{C:/Users/shoum/Documents/Winter Projects/260B/Step4/syn/netlist/driver.sv}} {0 {vlog -work work -vopt -sv {C:/Users/shoum/Documents/Winter Projects/260B/Step4/syn/netlist/driver.sv}
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+Start time: 19:17:28 on Mar 04,2026
+vlog -reportprogress 300 -work work -vopt -sv C:/Users/shoum/Documents/Winter Projects/260B/Step4/syn/netlist/driver.sv 
+** Note: (vlog-220) 'C:/Users/shoum/Documents/Winter Projects/260B/Step4/260B.mpf' is used as the ini file.
+** Error: C:/Users/shoum/Documents/Winter Projects/260B/Step4/syn/netlist/driver.sv(4): (vlog-2730) Undefined variable: 'transaction'.
+** Error: (vlog-13069) C:/Users/shoum/Documents/Winter Projects/260B/Step4/syn/netlist/driver.sv(4): near "#": syntax error, unexpected '#', expecting ')' or ','.
+End time: 19:17:28 on Mar 04,2026, Elapsed time: 0:00:00
+
+} {6.0 8.0} {}} {{C:/Users/shoum/Documents/Winter Projects/260B/Step4/syn/netlist/monitor.sv}} {0 {vlog -work work -vopt -sv {C:/Users/shoum/Documents/Winter Projects/260B/Step4/syn/netlist/monitor.sv}
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+Start time: 19:17:28 on Mar 04,2026
+vlog -reportprogress 300 -work work -vopt -sv C:/Users/shoum/Documents/Winter Projects/260B/Step4/syn/netlist/monitor.sv 
+** Note: (vlog-220) 'C:/Users/shoum/Documents/Winter Projects/260B/Step4/260B.mpf' is used as the ini file.
+** Error: C:/Users/shoum/Documents/Winter Projects/260B/Step4/syn/netlist/monitor.sv(4): (vlog-2730) Undefined variable: 'transaction'.
+** Error: (vlog-13069) C:/Users/shoum/Documents/Winter Projects/260B/Step4/syn/netlist/monitor.sv(4): near "#": syntax error, unexpected '#', expecting ')' or ','.
+End time: 19:17:28 on Mar 04,2026, Elapsed time: 0:00:00
+
+} {6.0 8.0} {}} {{C:/Users/shoum/Documents/Winter Projects/260B/Step4/syn/netlist/scoreboard.sv}} {0 {vlog -work work -vopt -sv {C:/Users/shoum/Documents/Winter Projects/260B/Step4/syn/netlist/scoreboard.sv}
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+Start time: 19:17:28 on Mar 04,2026
+vlog -reportprogress 300 -work work -vopt -sv C:/Users/shoum/Documents/Winter Projects/260B/Step4/syn/netlist/scoreboard.sv 
+** Note: (vlog-220) 'C:/Users/shoum/Documents/Winter Projects/260B/Step4/260B.mpf' is used as the ini file.
+** Error: C:/Users/shoum/Documents/Winter Projects/260B/Step4/syn/netlist/scoreboard.sv(2): (vlog-2730) Undefined variable: 'transaction'.
+** Error: (vlog-13069) C:/Users/shoum/Documents/Winter Projects/260B/Step4/syn/netlist/scoreboard.sv(2): near "#": syntax error, unexpected '#', expecting ')' or ','.
+End time: 19:17:28 on Mar 04,2026, Elapsed time: 0:00:00
+
+} {6.0 8.0} {}} {{C:/Users/shoum/Documents/Winter Projects/260B/Step4/syn/netlist/environment.sv}} {0 {vlog -work work -vopt -sv {C:/Users/shoum/Documents/Winter Projects/260B/Step4/syn/netlist/environment.sv}
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+Start time: 19:17:28 on Mar 04,2026
+vlog -reportprogress 300 -work work -vopt -sv C:/Users/shoum/Documents/Winter Projects/260B/Step4/syn/netlist/environment.sv 
+** Note: (vlog-220) 'C:/Users/shoum/Documents/Winter Projects/260B/Step4/260B.mpf' is used as the ini file.
+** Error: (vlog-13069) C:/Users/shoum/Documents/Winter Projects/260B/Step4/syn/netlist/environment.sv(2): near "#": syntax error, unexpected '#', expecting IDENTIFIER or '='.
+End time: 19:17:28 on Mar 04,2026, Elapsed time: 0:00:00
+
+} {6.0 7.0} {}} {C:/Users/shoum/Documents/Winter Projects/260B/Step4/syn/netlist/async_fifo.v} {1 {vlog -work work -vopt -stats=none {C:/Users/shoum/Documents/Winter Projects/260B/Step4/syn/netlist/async_fifo.v}
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) 'C:/Users/shoum/Documents/Winter Projects/260B/Step4/260B.mpf' is used as the ini file.
+-- Compiling module async_fifo
+
+Top level modules:
+	async_fifo
+
+} {} {}} {{C:/Users/shoum/Documents/Winter Projects/260B/Step4/syn/netlist/sync.v}} {1 {vlog -work work -vopt {C:/Users/shoum/Documents/Winter Projects/260B/Step4/syn/netlist/sync.v}
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+Start time: 19:17:25 on Mar 04,2026
+vlog -reportprogress 300 -work work -vopt C:/Users/shoum/Documents/Winter Projects/260B/Step4/syn/netlist/sync.v 
+** Note: (vlog-220) 'C:/Users/shoum/Documents/Winter Projects/260B/Step4/260B.mpf' is used as the ini file.
+-- Compiling module sync
+
+Top level modules:
+	sync
+End time: 19:17:25 on Mar 04,2026, Elapsed time: 0:00:00
+
+} {} {}} {{C:/Users/shoum/Documents/Winter Projects/260B/Step4/syn/netlist/async_fifo_tb.sv}} {0 {vlog -work work -vopt -sv {C:/Users/shoum/Documents/Winter Projects/260B/Step4/syn/netlist/async_fifo_tb.sv}
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+Start time: 19:17:28 on Mar 04,2026
+vlog -reportprogress 300 -work work -vopt -sv C:/Users/shoum/Documents/Winter Projects/260B/Step4/syn/netlist/async_fifo_tb.sv 
+** Note: (vlog-220) 'C:/Users/shoum/Documents/Winter Projects/260B/Step4/260B.mpf' is used as the ini file.
+** Error: (vlog-13069) C:/Users/shoum/Documents/Winter Projects/260B/Step4/syn/netlist/async_fifo_tb.sv(85): near "#": syntax error, unexpected '#', expecting IDENTIFIER or '='.
+End time: 19:17:28 on Mar 04,2026, Elapsed time: 0:00:00
+
+} {6.0 7.0} {}} {C:/Users/shoum/Documents/Winter Projects/260B/Step4/syn/netlist/sync.v} {1 {vlog -work work -vopt -stats=none {C:/Users/shoum/Documents/Winter Projects/260B/Step4/syn/netlist/sync.v}
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) 'C:/Users/shoum/Documents/Winter Projects/260B/Step4/260B.mpf' is used as the ini file.
+-- Compiling module sync
+
+Top level modules:
+	sync
+
+} {} {}} {{C:/Users/shoum/Documents/Winter Projects/260B/Step4/syn/netlist/async_fifo.v}} {1 {vlog -work work -vopt {C:/Users/shoum/Documents/Winter Projects/260B/Step4/syn/netlist/async_fifo.v}
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+Start time: 19:17:25 on Mar 04,2026
+vlog -reportprogress 300 -work work -vopt C:/Users/shoum/Documents/Winter Projects/260B/Step4/syn/netlist/async_fifo.v 
+** Note: (vlog-220) 'C:/Users/shoum/Documents/Winter Projects/260B/Step4/260B.mpf' is used as the ini file.
+-- Compiling module async_fifo
+
+Top level modules:
+	async_fifo
+End time: 19:17:25 on Mar 04,2026, Elapsed time: 0:00:00
+
+} {} {}}

@@ -1,0 +1,2 @@
+./netlist/async_fifo.v
+./netlist/async_fifo_tb.sv
