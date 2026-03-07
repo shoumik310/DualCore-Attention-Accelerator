@@ -20,7 +20,7 @@ integer  result[total_cycle-1:0][col-1:0];
 integer  row_sum[total_cycle-1:0];
 integer  norm[total_cycle-1:0][col-1:0];
 
-integer i,j,k,t,p,q,x,s,u,m;
+integer i,j,k,t,p,q,x,s,u,m,y;
 
 reg [col*bw_psum-1:0] sfp_in;
 wire [col*bw_psum-1:0] sfp_out;
@@ -34,7 +34,6 @@ reg [bw_psum-1:0] temp5b;
 reg [bw_psum*col-1:0] temp16b;
 
 
-// TODO: sfp_row_singleCore instance creation here
 sfp_row_singleCore #(.bw(bw), .bw_psum(bw_psum), .col(col)) sfp_row_singleCore_instance (
     .clk(clk),
     .acc(acc),
@@ -139,13 +138,21 @@ $display("##### Estimated multiplication result #####");
 //////////////////////////////////////////////
 
   $display("##### load rows to sfp_in outputs #####");
-  for (s=0; s<total_cycle; s=s+1) begin
-    sfp_in[bw_psum*(s+1)-1 : bw_psum*s] = result[t][s];
+
+  for (y=0; y<total_cycle; y=y+1) begin
+    	sfp_in[bw_psum*1-1: bw_psum*0] = result[y][0];
+    	sfp_in[bw_psum*2-1: bw_psum*1] = result[y][1];
+    	sfp_in[bw_psum*3-1: bw_psum*2] = result[y][2];
+    	sfp_in[bw_psum*4-1: bw_psum*3] = result[y][3];
+    	sfp_in[bw_psum*5-1: bw_psum*4] = result[y][4];
+    	sfp_in[bw_psum*6-1: bw_psum*5] = result[y][5];
+    	sfp_in[bw_psum*7-1: bw_psum*6] = result[y][6];
+    	sfp_in[bw_psum*8-1: bw_psum*7] = result[y][7];
   end
 
 
 ///// execution of normalization  /////
-$display("##### normalize outputs #####");
+  $display("##### normalize outputs #####");
 
   for (q=0; q<total_cycle; q=q+1) begin
     #0.5 clk = 1'b0;  
@@ -169,13 +176,29 @@ $display("##### normalize outputs #####");
 ///////////////////////////////////////////
 
 ///// display sfp_out /////
-$display("##### sfp outputs #####");
-  for (u=0; u<total_cycle; u=u+1) begin 
-    for (m=0; m<col; m=m+1) begin 
-        temp5b = sfp_out[u][m];
-        temp16b = {temp16b[139:0], temp5b};
-    end
+  $display("##### sfp outputs #####");
 
+  for (u=0; u<total_cycle; u=u+1) begin
+    temp16b = 0;
+    temp5b = sfp_out[bw_psum*1-1: bw_psum*0];
+    temp16b = {temp16b[139:0], temp5b};
+    temp5b = sfp_out[bw_psum*2-1: bw_psum*1];
+    temp16b = {temp16b[139:0], temp5b};
+    temp5b = sfp_out[bw_psum*3-1: bw_psum*2];
+    temp16b = {temp16b[139:0], temp5b};
+    temp5b = sfp_out[bw_psum*4-1: bw_psum*3];
+    temp16b = {temp16b[139:0], temp5b};
+    temp5b = sfp_out[bw_psum*5-1: bw_psum*4];
+    temp16b = {temp16b[139:0], temp5b};
+    temp5b = sfp_out[bw_psum*6-1: bw_psum*5];
+    temp16b = {temp16b[139:0], temp5b};
+    temp5b = sfp_out[bw_psum*7-1: bw_psum*6];
+    temp16b = {temp16b[139:0], temp5b};
+    temp5b = sfp_out[bw_psum*8-1: bw_psum*7];
+    temp16b = {temp16b[139:0], temp5b};
+
+    
+	    
     //$display("%d %d %d %d %d %d %d %d", result[t][0], result[t][1], result[t][2], result[t][3], result[t][4], result[t][5], result[t][6], result[t][7]);
     $display("out @cycle%2d: %40h", u, temp16b);
   end
