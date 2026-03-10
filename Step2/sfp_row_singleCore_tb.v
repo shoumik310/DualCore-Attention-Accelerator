@@ -125,7 +125,7 @@ $display("##### Estimated multiplication result #####");
 
      // second loop over q-values to calculate normalized values
      for (x=0; x<col; x=x+1) begin 
-        norm[t][x] = ((result[t][x] < 0) ? -result[t][x] : result[t][x]) / row_sum[t];
+        norm[t][x] = (((result[t][x] < 0) ? -result[t][x] : result[t][x]) << 8) / row_sum[t];
 
         temp5b = norm[t][x];
         temp16b = {temp16b[139:0], temp5b};

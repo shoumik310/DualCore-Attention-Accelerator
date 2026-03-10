@@ -55,14 +55,14 @@ module sfp_row_singleCore (clk, acc, div, sfp_in, sfp_out);
     end
     else begin
         if (div) begin
-            sfp_out_reg0 <= abs_q[bw_psum*1-1 : bw_psum*0] / sum_q;
-            sfp_out_reg1 <= abs_q[bw_psum*2-1 : bw_psum*1] / sum_q;
-            sfp_out_reg2 <= abs_q[bw_psum*3-1 : bw_psum*2] / sum_q;
-            sfp_out_reg3 <= abs_q[bw_psum*4-1 : bw_psum*3] / sum_q;
-            sfp_out_reg4 <= abs_q[bw_psum*5-1 : bw_psum*4] / sum_q;
-            sfp_out_reg5 <= abs_q[bw_psum*6-1 : bw_psum*5] / sum_q;
-            sfp_out_reg6 <= abs_q[bw_psum*7-1 : bw_psum*6] / sum_q;
-            sfp_out_reg7 <= abs_q[bw_psum*8-1 : bw_psum*7] / sum_q;
+            sfp_out_reg0 <= (abs_q[bw_psum*1-1 : bw_psum*0] << 8) / sum_q;
+            sfp_out_reg1 <= (abs_q[bw_psum*2-1 : bw_psum*1] << 8) / sum_q;
+            sfp_out_reg2 <= (abs_q[bw_psum*3-1 : bw_psum*2] << 8) / sum_q;
+            sfp_out_reg3 <= (abs_q[bw_psum*4-1 : bw_psum*3] << 8) / sum_q;
+            sfp_out_reg4 <= (abs_q[bw_psum*5-1 : bw_psum*4] << 8) / sum_q;
+            sfp_out_reg5 <= (abs_q[bw_psum*6-1 : bw_psum*5] << 8) / sum_q;
+            sfp_out_reg6 <= (abs_q[bw_psum*7-1 : bw_psum*6] << 8) / sum_q;
+            sfp_out_reg7 <= (abs_q[bw_psum*8-1 : bw_psum*7] << 8) / sum_q;
         end
     end
  end
